@@ -21,7 +21,7 @@ def plot_sine():
 # Plot 10,000 uniformly distributed random numbers on [0, 1)
 def generate_histogram():
     x = np.random.uniform(0, 1, 10000)
-    plot.hist(x)
+    plot.hist(x, bins=20)
     plot.show()
 
 
