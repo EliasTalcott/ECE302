@@ -5,9 +5,9 @@ import matplotlib.pyplot as plot
 
 # Calculate the result of a matrix vector multiplication
 def matrix_vector_multiplication():
-    arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    mat = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
     vec = np.array([1, 2, 3])
-    return arr.dot(vec)
+    print("Result: {}".format(np.matmul(mat, vec)))
 
 
 # Plot sine from -pi to pi with 1,000 data points
@@ -18,7 +18,7 @@ def plot_sine():
     plot.show()
 
 
-# Plot a histogram of 10,000 uniformly distributed random numbers on [0, 1)
+# Plot 10,000 uniformly distributed random numbers on [0, 1)
 def generate_histogram():
     x = np.random.uniform(0, 1, 10000)
     plot.hist(x)
@@ -26,6 +26,6 @@ def generate_histogram():
 
 
 if __name__ == "__main__":
-    print(matrix_vector_multiplication())
+    matrix_vector_multiplication()
     plot_sine()
     generate_histogram()

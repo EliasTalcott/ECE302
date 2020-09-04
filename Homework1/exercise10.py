@@ -7,8 +7,9 @@ def random_draw(n = 10000):
     matches = 0
     for _ in range(0, n):
         # Make list of all letters and of vowels
-        letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-                   'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+        letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+                   'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+                   's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
         vowels = ['a', 'e', 'i', 'o', 'u']
         # Draw and remove first letter
         draw1 = letters[np.random.randint(0, 25)]
